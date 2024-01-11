@@ -811,7 +811,7 @@ header .member-actions{
     left:30px;
     transform:translateY(-50%)
 }
-.rsvp .rsvp-form .form-input-group i.fa-user,.rsvp .rsvp-form .form-input-group i.fa-users,.rsvp .rsvp-form .form-input-group i.fa-envelope,.rsvp .rsvp-form .form-input-group .fa-key{
+.rsvp .rsvp-form .form-input-group i.fa-user,.rsvp .rsvp-form .form-input-group i.fa-users,.rsvp .rsvp-form .form-input-group i.fa-envelope,.rsvp .rsvp-form .form-input-group .fa-key, .rsvp .rsvp-form .form-input-group i.fa-spoon, .rsvp .rsvp-form .form-input-group i.fa-shield{
     font-size:14px;
     position:absolute;
     top:50%;
