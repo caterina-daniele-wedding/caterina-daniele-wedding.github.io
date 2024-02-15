@@ -252,7 +252,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/catodano_lower.jpg') center center;
+  background: url('../img/sfondo_sito.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -728,6 +728,9 @@ Embed video
 #video-bg {
   height: 300px;
 }
+#img-bg {
+  height: 300px;
+}
 #video-content {
   width: 100%;
   height: 100%;
@@ -746,11 +749,29 @@ Embed video
   color: #ffffff;
 }
 
+#img-content {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  position: relative;
+  background: rgba(17, 17, 17, 0.5);
+  text-align: center;
+}
+#img-background{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 10px;
+}
+#img-background{
+  color: #ffffff;
+}
+
 /* ==========================================================================
 Google map
 ========================================================================== */
 #map-canvas {
-  height: 500px;
+  height: 450px;
   width: 100%;
   background-color:lightgray
 }
@@ -760,7 +781,7 @@ Google map
   margin-bottom: 150px;
 }
 #map-content {
-  margin-top: 40px;
+  /*margin-top: 40px;*/
   padding: 50px 60px;
   background: #fff;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
@@ -797,6 +818,13 @@ RSVP form
       width: 100%;
       font-size: 13px;
     }
+    .confirm-btn {
+      padding: 15px 0;
+      border-radius: 3px;
+      width: 30%;
+      font-size: 13px;
+      margin-top:30px;
+    }
     .form-input-group {
       width: 100%;
       height: 55px;
@@ -822,7 +850,7 @@ RSVP form
         left: 30px;
         transform: translateY(-50%);
       }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, .fa-spoon, .fa-shield {
+      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, .fa-spoon, .fa-shield , i.fa-music{
         font-size: 14px;
         position: absolute;
         top: 50%;
