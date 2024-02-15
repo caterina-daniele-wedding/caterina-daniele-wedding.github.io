@@ -174,6 +174,85 @@ $(document).ready(function () {
         $('#map-content').toggleClass('toggle-map-content');
         $('#btn-show-content').toggleClass('toggle-map-content');
     });
+    $('#btn-confirm').click(function () {
+        $('#people-amount').toggleClass('toggle-map-content');
+        $('#people-form').toggleClass('toggle-map-content');
+        console.log($('#n-participants').val());
+        var n_participants = $('#n-participants').val();
+		var tag_to_append = $('<div class="row"><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-user"></i><input name="name'+(1)+'" class=""placeholder="Full name '+(1)+'"required></div></div><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-spoon"></i><input type="text" name="dietary_restrictions'+(1)+'" class=""placeholder="Dietary restrictions"required></div></div></div><div class="row"><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-shield"></i><input type="text" name="sword_tournament'+(1)+'" class=""placeholder="Enter sword tournament? (y/n)"required></div></div><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-music"></i><input type="text" name="song'+(1)+'" class="" placeholder="Song for karaoke"></div></div></div>');
+		for(t=0; t<n_participants; t++){
+			$("#multiple-participants").append(tag_to_append);
+            console.log(t);
+            tag_to_append = $('<div class="row" style="margin-top:40px"><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-user"></i><input name="name'+(t+2)+'" class=""placeholder="Full name '+(t+2)+'"required></div></div><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-spoon"></i><input type="text" name="dietary_restrictions'+(t+2)+'" class=""placeholder="Dietary restrictions"required></div></div></div><div class="row"><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-shield"></i><input type="text" name="sword_tournament'+(t+2)+'" class=""placeholder="Enter sword tournament? (y/n)"required></div></div><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-music"></i><input type="text" name="song'+(t+2)+'" class="" placeholder="Song for karaoke"></div></div></div>');
+		}
+    });
+
+    /********************** Toggle Programme Sections **********************/
+    $('#ceremony').click(function(){
+        if( $("#txt-ceremony").css('display') == 'none') {
+            $('#txt-ceremony').css({"visibility":"visible",
+                                    "display":"inline-block"});
+        }
+        else{
+            $('#txt-ceremony').css({"visibility":"hidden",
+                                    "display":"none"});
+        }
+    });
+
+    $('#aperitif').click(function(){
+        if( $("#txt-aperitif").css('display') == 'none') {
+            $('#txt-aperitif').css({"visibility":"visible",
+                                    "display":"inline-block"});
+        }
+        else{
+            $('#txt-aperitif').css({"visibility":"hidden",
+                                    "display":"none"});
+        }
+    });
+
+    $('#lunch').click(function(){
+        if( $("#txt-lunch").css('display') == 'none') {
+            $('#txt-lunch').css({"visibility":"visible",
+                                    "display":"inline-block"});
+        }
+        else{
+            $('#txt-lunch').css({"visibility":"hidden",
+                                    "display":"none"});
+        }
+    });
+
+    $('#medieval').click(function(){
+        if( $("#txt-medieval").css('display') == 'none') {
+            $('#txt-medieval').css({"visibility":"visible",
+                                    "display":"inline-block"});
+        }
+        else{
+            $('#txt-medieval').css({"visibility":"hidden",
+                                    "display":"none"});
+        }
+    });
+
+    $('#dinner').click(function(){
+        if( $("#txt-dinner").css('display') == 'none') {
+            $('#txt-dinner').css({"visibility":"visible",
+                                    "display":"inline-block"});
+        }
+        else{
+            $('#txt-dinner').css({"visibility":"hidden",
+                                    "display":"none"});
+        }
+    });
+
+    $('#dj').click(function(){
+        if( $("#txt-dj").css('display') == 'none') {
+            $('#txt-dj').css({"visibility":"visible",
+                                    "display":"inline-block"});
+        }
+        else{
+            $('#txt-dj').css({"visibility":"hidden",
+                                    "display":"none"});
+        }
+    });
 
     /********************** Add to Calendar **********************/
     var myCalendar = createCalendar({
@@ -184,23 +263,23 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Caterina and Daniele's Wedding",
 
             // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+            start: new Date('Jun 8, 2024 10:30'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 29, 2017 00:00'),
+            end: new Date('Jun 9, 2024 01:00'),
 
             // Event Address
-            address: 'ITC Fortune Park Hotel, Kolkata',
+            address: 'Via Gagliardi 1, Mestre (Ve)',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210."
+            description: "We can't wait to see you!"
         }
     });
 
@@ -214,11 +293,10 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+        if (MD5($('#invite_code').val()) !== 'bb0efea553d080b06053dc948148a8fe') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbyo0rEknln8LedEP3bkONsfOh776IR5lFidLhJFQ6jdvRiH4dKvHZmtoIybvnxpxYr2cA/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbxhKClIcfNLlhJF2wymeJc4Gh4CygOoD4bx88w59ALeLXoUXNfY7hR1UKwOCkJ7fWLD/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
