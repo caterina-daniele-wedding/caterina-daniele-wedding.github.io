@@ -81,7 +81,7 @@
                     'END:VEVENT',
                     'END:VCALENDAR'].join('\n'));
 
-            return '<a class="' + eClass + '" target="_blank" href="' +
+            return '<a class="' + eClass + '" href="' +
                 href + '">' + calendarName + ' Calendar</a>';
         },
 
@@ -97,9 +97,9 @@
     var generateCalendars = function(event) {
         return {
             google: calendarGenerators.google(event),
-            yahoo: calendarGenerators.yahoo(event),
+            //yahoo: calendarGenerators.yahoo(event),
             ical: calendarGenerators.ical(event),
-            outlook: calendarGenerators.outlook(event)
+            //outlook: calendarGenerators.outlook(event)
         };
     };
 
