@@ -74,15 +74,19 @@
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
-                            <li><a href="#intro">How we met</a></li>
+                            <!--<li><a href="#intro">How we met</a></li>-->
                             <li><a href="#events">Event Schedule</a></li>
                             <!--<li><a href="#instagram">Instagram</a></li>
                             <li><a href="#eng-pics">Engagement</a></li>-->
-                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the Venue</a></li>
+                            <!--<li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the Venue</a></li>-->
+                            <li class="hidden-sm hidden-xs hidden-md"><a href="#video-bg">Glimpse of the Venue</a></li>
+                            <li class="hidden-lg"><a href="#img-bg">Glimpse of the Venue</a></li>
+                            <li><a href="#rsvp-date">Register</a></li>
+                            <li><a href="#gift">Gift</a></li>
                         </ul>
                         <ul class="member-actions">
                             <li><a href="#map" class="login">Venue address</a></li>
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
+                            <!--<li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>-->
                         </ul>
                     </nav>
                 </div>
@@ -103,12 +107,9 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp"
-                                                           class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
-            <div class="col-sm-4 hidden-xs"></div>
-        </div>
+        <!--<div class="row">
+            <div class="col-md-offset-1 text-center"><img src="img/elemento_centrale2.png" class="wp8"></div>
+        </div>-->
     </div>
     <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
 </section>
@@ -118,14 +119,15 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>We are getting married!</h3>
-                <p>We would like you to be a part of this special day on Saturday 8<sup>th</sup> of June 2024.</p>
+                <p>We would like you to be a part of this special day on the</p> 
+                <p>8<sup>th</sup> of June 2024</p>
                 <!--<div class="share-bar"></div>-->
             </div>
         </div>
     </div>
 </section>
 
-<section id="intro">
+<!--<section id="intro">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -146,41 +148,70 @@
             <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/eagle.jpg" class="wp9"></div>
         </div>
     </div>
-</section>
+</section>-->
 
 <section class="events section-padding" id="events">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h3 class="header">Events</h3>
+            <div class="col-md-12 text-center">
+                <h3 class="header" style="padding-bottom: 0px; margin-bottom: 0px;">Event timeline</h3>
+                <p><strong>Click the sections to expand or collapse</strong></p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+            <div class="col-md-12 text-center">
                 <div class="wp3">
-                    <p><strong>English</strong></p>
-                    
-                    <h5>Ceremony <span class="time">10.30AM - 11.30AM</span></h5>
-                    <p>Description of ceremony...</p>
+                    <h5 id="ceremony">Ceremony <br><span class="time">10:30 - 11:30</span></h5>
+                    <div id="txt-ceremony" style="visibility: hidden; display:none">
+                        <p>Don Sandro Manfrè and Don Gilberto Sabbadin <br> will celebrate the <strong>Holy Mass</strong> with Catholic rite <br> in Corpus Domini Church - Mestre Venice</p>
+                        
+                    </div>
+                    <hr>
                 </div>
                 <div class="wp5">
-                    <h5>Reception - Lunch <span class="time">Ora inizio - Ora fine</span></h5>
-                    <p>Description Reception - Lunch</p>
+                    <h5 id="aperitif">Aperitif at the villa <br><span class="time">12:30 - 14:00</span></h5>
+                    <div id="txt-aperitif" style="visibility: hidden; display:none">
+                        <p>Will be serve a selection of <strong>finger food and refreshment</strong> <br> in a neoclassic Venetian villa garden. <br> <strong>The villa will also be open for visiting.</strong></p>
+                        
+                    </div>
+                    <hr>
                 </div>
                 <div class="wp5">
-                    <h5>Kids entertainment <span class="time">Ora inizio - Ora fine</span></h5>
-                    <p>Description Kids entertainment</p>
+                    <h5 id="lunch">Lunch - Feast under the trees <br><span class="time">14:00 - 16:30</span></h5>
+                    <div id="txt-lunch" style="visibility: hidden; display:none">
+                        <p>A festive lunch refreshed by <br> the shadow of centenary trees and nature's sounds.</p>
+                        <p>If the guests want to <strong>suggest a game</strong> <br> or <strong>share a moment</strong> with us <br> please contact our bridesmades or best men (link).</p>
+                        <p>During this time there will be the possibility for parents <br> to let the children play in the <strong>Children Corner</strong>, <br> supervised by two Scouts members</p>
+                        
+                    </div>
+                    <hr>
                 </div>
                 <div class="wp5">
-                    <h5>Afterlunch Party <span class="time">Ora inizio - Ora fine</span></h5>
-                    <p>Description Afterlunch Party</p>
+                    <h5 id="medieval">Medieval Entertainment <br><span class="time">17:00 - 19:00</span></h5>
+                    <div id="txt-medieval" style="visibility: hidden; display:none">
+                        <p>Prove what you are made of <br> by fighting in a jolly <strong>sword tournament</strong>, <br> organized by some members of the Cavalcalupi Association.</p>
+                        <p>On a totally voluntary basis <br> we'll have some rounds of classic and simple <strong>traditional dances</strong>.</p>
+                    </div>
+                    <hr>
                 </div>
                 <div class="wp5">
-                    <h5>Dinner <span class="time">Ora inizio - Ora fine</span></h5>
-                    <p>Description Dinner</p>
+                    <h5 id="dinner">Open Bar, Dinner & Karaoke <br><span class="time">19:00 - 21:00</span></h5>
+                    <div id="txt-dinner" style="visibility: hidden; display:none">
+                        <p><strong>The drinks are on us, let's party!</strong> <br> At this time a small dinner will also be served, <br> to give you some energy for the remaining part of the evening.</p>
+                        <p>The sun is going down <br> but the party is just getting started! <br> If you want to release your inner singer <br> or you just want to party hard <br> prepare yourself for your moment in the spotlight.</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="wp5">
+                    <h5 id="dj">DJ set <br><span class="time">21:00 - 24:00</span></h5>
+                    <div id="txt-dj" style="visibility: hidden; display:none">
+                        <p>Just <strong>dance and mingle</strong>, <br> we are all happy to celebrate life together.</p>
+                        <p>Remember to <strong>sober up</strong> before hopping behind the wheel, <br> or find a <strong>designated driver</strong>! <br> Good night!</p>
+                    </div>
+                    <hr>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+            <!--<div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                 <div class="wp4">
                     <p><strong>Italian</strong></p>
 
@@ -203,7 +234,7 @@
                     <h5>Cena <span class="time">Ora inizio - Ora fine</span></h5>
                     <p>Descrizione cena</p>
                 </div>
-            </div>
+            </div>-->
         </div>
         <div class="row section-padding">
             <div class="col-md-4 col-md-offset-4 text-center">
@@ -339,9 +370,9 @@
     </div>
 </section>-->
 
-<section id="video-bg" class="hidden-sm hidden-xs">
+<section id="video-bg" class="hidden-sm hidden-xs hidden-md">
     <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://youtu.be/fn1vm-xZsf4?si=vmE27aaonQIBhjfc',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:10, stopAt:87, opacity:1}">
+         data-property="{videoURL:'https://youtu.be/fn1vm-xZsf4?si=vmE27aaonQIBhjfc',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:10, stopAt:87, opacity:1, optimizeDisplay:true}">
     </div>
     <div id="video-content">
         <h5>Villa Widmann</h5>
@@ -349,52 +380,157 @@
     </div>
 </section>
 
-<section id="map" class="section-padding">
+
+<section id="img-bg" class="hidden-lg" style="background: url('img/villa.png');height: 300px;background-size: 100% auto;background-repeat: no-repeat;opacity: 0.6;">
+    <!--<div id="img-background" style="background: url('img/black_img.png');height: 300px;background-size: 100% auto;background-repeat: no-repeat;opacity: 0.2;">
+    </div>-->
+    <!--<h5 id="text-img-villa">Villa Widmann</h5>-->
+</section>
+
+<section id="map" class="section-padding" style="background-color:#f8f9fd">
     <div class="text-center">
         <h3>How do I get there?</h3>
         <p>It's way easier than you think!</p>
     </div>
-    <div id="map-canvas" style="background-color:#d3d3d3"></div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
+    <!--<div id="map-canvas" style="background-color:#f8f9fd"></div>-->
+    <!--<div class="row" style="background-color:#f8f9fd">-->
+        <!--<div id="map-content-wrapper" class="container pointer-events-none">-->
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-1">
+                        <div class="text-center">
+                            <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                                <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                            </div>
+                        </div>
+                        <div id="map-content" class="pointer-events-auto">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Corpus Domini Church</h5>
+                                    <p>Via Gagliardi, 1, 30173 Venice, Italy</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Info point</h5>
+                                    <p><i class="fa fa-mobile"></i> <a style="color:rgb(101,124,124);" href="tel://+390415322014">+39 0415322014</a><be>
+                                        <!--<i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a>-->
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <!--<div class="col-md-6" style="padding: 5px;">
+                                    <a class="btn btn-fill btn-small"
+                                    href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
+                                            class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+                                </div>-->
+                                <div class="col-md-6 col-md-offset-3" style="padding: 5px;">
+                                    <a class="btn btn-fill btn-small" style="background-color:rgb(101,124,124); border:rgb(101,124,124)"
+                                    href="https://maps.app.goo.gl/WQdHFYcnd2nahC9r9" target="_blank"><i class="fa fa-map-marker"></i>&nbsp;&nbsp; Google Maps
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-1">
+                        <div class="text-center">
+                            <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                                <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                            </div>
+                        </div>
+                        <div id="map-content" class="pointer-events-auto">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Villa Widmann</h5>
+                                    <p>Via Nazionale, 420, 30034 Mira VE, Italy</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Info point</h5>
+                                    <p><i class="fa fa-mobile"></i> <a style="color: rgb(101,124,124)" href="tel://+39041424973">+39 041424973</a><be>
+                                        <!--<i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a>-->
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <!--<div class="col-md-6" style="padding: 5px;">
+                                    <a class="btn btn-fill btn-small"
+                                    href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
+                                            class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+                                </div>-->
+                                <div class="col-md-6 col-md-offset-3" style="padding: 5px;">
+                                    <a class="btn btn-fill btn-small" style="background-color:rgb(101,124,124); border:rgb(101,124,124)"
+                                    href="https://maps.app.goo.gl/2b2jnwmtQwKpwEnB7" target="_blank"><i class="fa fa-map-marker"></i>&nbsp;&nbsp; Google Maps
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center" style="margin-top:20px">
+                    <hr>
+                    <h3 style="margin-top:40px">Where to stay?</h3>
+                </div>
+                <div class="col-md-4 col-md-offset-4 text-center" style="padding-top:30px">
+                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal-accommodation">
+                        <i class="fa fa-hotel"></i>&nbsp;&nbsp;Accommodation
+                    </a>
+                </div>
+            </div>
+        <!--</div>-->
+    <!--</div>-->
+    <div id="dc-modal-accommodation" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <h3 class="text-center section-padding">A couple of hotels for you</h3>
+                    <p>
+                        <strong>Hotel Garibaldi - Viale Garibaldi 24, 30173 Mestre, Italy </strong>
+                        <br>
+                        <p>Hotel Garibaldi is a small 3-stars hotel close to the center of Mestre.</p>
+                        <p>It is close to the location of the ceremony and has the option for private parking, in case you are renting a car to reach Villa Widmann.</p>
+                        <p>The price for a room is low, and it could be ideal if you plan to spend just one or two nights without spending too much time exploring Venice.</p>
+                        <hr>
+                    </p>
+
+                    <p>
+                        <strong>Hotel Papadopoli - S. Croce 245, 30135 Venice, Italy</strong>
+                        <br>
+                        <p>Hotel Papadopoli is a nice 4-star hotel in Venice.</p>
+                        <p>It is very close to the bus/train station and close to the location of the ceremony. </p>
+                        <p>Venice being Venice, this hotel does not have private parking BUT there are free parking spaces close to the ceremony location. From there you can then take a bus or tram to the hotel (15 mins ride).</p>
+                        <p>While the price is a bit higher, if you need to book for several people we might be able to get you a "group discount": just let us know the dates and number of people a bit in advance!</p>
+                        <p>This hotel is a great option for people willing to spend more time exploring Venice before the wedding.</p>
+                        <hr>
+                    </p>
+
+                    <p>
+                        <strong>Airbnb</strong>
+                        <br>
+                        <p>Finally, Airbnnb is always a good friend of yours. You should be able to find options in both Mestre and Venice. </p>
+                        <p>While we cannot guarantee for the quality of the accommodation you will find, you can always send us the address of the place where you would like to book: we will do our best to let you know if the area is good and if it makes sense for you to stay there.</p>
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</section>
+
+<section class="section-padding" id="rsvp-date" style="background: rgb(101,124,124);">
+    <div class="container">
         <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
-                    </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>Villa Widmann</h5>
-                            <p>Via Nazionale, 420, 30034 Mira VE, Italy</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Info point for the location</h5>
-                            <p><i class="fa fa-mobile"></i> <a href="tel://+39041424973">+39 041424973</a><be>
-                                <!--<i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a>-->
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                        </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://maps.app.goo.gl/2b2jnwmtQwKpwEnB7" target="_blank"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Open Google Maps
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-12 text-center">
+                <h3 style="color:white;">Will you join us?</h3>
+                <p style="color:white;">We would greatly appreciate if you could RSVP before <br> <strong>15th of May 2024</strong></p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="rsvp text-center" id="rsvp">
+<section class="rsvp text-center events" id="rsvp">
 
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -404,7 +540,7 @@
                     </button>
                     <div class="section-padding">
                         <h3>Thank you!</h3>
-                        <p>We will be happy to see you on this big day.</p>
+                        <p>We will be happy to see you on this big day!</p>
                         <div id="add-to-cal"></div>
                     </div>
                 </div>
@@ -412,61 +548,51 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <div class="container">
+    <div id="people-amount" class="container class-people-amount section-padding">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before 15th of May 2024</p>
+                <h3>How many people do you want to register?</h3>
+                <select id="n-participants" style="width:100px">
+                    <option style="text-align: center;" value="1">1</option>
+                    <option style="text-align: center;" value="2">2</option>
+                    <option style="text-align: center;" value="3">3</option>
+                    <option style="text-align: center;" value="4">4</option>
+                    <option style="text-align: center;" value="5">5</option>
+                    <option style="text-align: center;" value="6">6</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-md-offset-3" style="margin-top: 7px">
+                <button id="btn-confirm" class="btn-fill confirm-btn" style="border: solid 1px rgb(101,124,124); background-color:rgb(101,124,124);">
+                    Confirm
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="people-form" class="container toggle-map-content class-people-form section-padding">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-6 col-md-offset-3">
                             <div class="form-input-group">
                                 <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email / La tua email"
+                                                                     placeholder="Your email"
                                                                      required>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name / Nome"
-                                                                 required>
-                            </div>
-                        </div>
+                    </div>
+                    <div id="multiple-participants">
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-spoon"></i><input type="text" name="dietary_restrictions" class=""
-                                                                  placeholder="Dietary restrictions / Esigenze Alimentari"
-                                                                  required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-shield"></i><input type="text" name="sword_tournament" class=""
-                                                                placeholder="Enter sword tournament? (y/n)"
-                                                                required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
-                                                                  required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6"> 
+                        <div class="col-md-6 col-sm-6 col-md-offset-3"> 
                             <!--col-md-offset-3">-->
                             <div class="form-input-group">
                                 <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
                                                                 class="" min="0"
-                                                                placeholder="Invite code / Codice invito"
+                                                                placeholder="Invite code"
                                                                 required>
                             </div>
                         </div>
@@ -479,6 +605,19 @@
                         that's me!
                     </button>
                 </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding" id="gift">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Do you want to make us a gift?</h3>
+                <p>First of all, the most important gift is of course your presence on this day.</p>
+                <p>IF you want to make us an additional present, to help us realize small and big dreams, you can donate any amount to</p>
+                <p class="text-center">SE27 3000 0000 0439 5030 4734</p>
             </div>
         </div>
     </div>
