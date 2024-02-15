@@ -406,7 +406,7 @@ header .header-nav{
 header .member-actions{
     position:absolute;
     right:0;
-    top:41px;
+    top:51px;
     transition:all 300ms ease-in-out
 }
 .down-arrow{
@@ -803,7 +803,7 @@ header .member-actions{
 }
 .confirm-btn{
     padding:15px 0;
-    border-radius:3px;
+    border-radius:40px;
     width:30%;
     font-size:13px;
     margin-top:30px;
