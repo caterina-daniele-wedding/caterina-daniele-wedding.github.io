@@ -197,7 +197,7 @@ $(document).ready(function () {
     });
 
     /********************** Flags Buttons **********************/
-    $('#ita-flag').click(function () {
+    $('.ita-flag').click(function () {
         $('.eng-text').toggleClass('language-hidden');
         $('.ita-text').toggleClass('language-hidden');
         $('#ita-flag').toggleClass('language-hidden');
@@ -208,7 +208,7 @@ $(document).ready(function () {
         }
     });
 
-    $('#eng-flag').click(function () {
+    $('.eng-flag').click(function () {
         $('.ita-text').toggleClass('language-hidden');
         $('.eng-text').toggleClass('language-hidden');
         $('#ita-flag').toggleClass('language-hidden');
