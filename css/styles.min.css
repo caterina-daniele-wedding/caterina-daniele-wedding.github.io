@@ -787,6 +787,10 @@ header .member-actions{
     -webkit-transition:opacity .5s,visibility .6s,margin-top .5s;
     transition:opacity .5s,visibility .6s,margin-top .5s
 }
+.language-hidden{
+    visibility:hidden;
+    display:none
+}
 .toggle-map-content{
     opacity:0;
     visibility:hidden;
