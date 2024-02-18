@@ -203,6 +203,9 @@ $(document).ready(function () {
         $('#ita-flag').toggleClass('language-hidden');
         $('#eng-flag').toggleClass('language-hidden');
         $('#add-to-cal-ita label').text("Aggiungi al tuo calendario");
+        if(!$(".nav-toggle-ita").hasClass("active")){
+            $(".nav-toggle-ita").toggleClass("active")
+        }
     });
 
     $('#eng-flag').click(function () {
@@ -210,7 +213,9 @@ $(document).ready(function () {
         $('.eng-text').toggleClass('language-hidden');
         $('#ita-flag').toggleClass('language-hidden');
         $('#eng-flag').toggleClass('language-hidden');
-
+        if(!$(".nav-toggle-eng").hasClass("active")){
+            $(".nav-toggle-eng").toggleClass("active")
+        }
     });
 
     /********************** Toggle Programme Sections **********************/
