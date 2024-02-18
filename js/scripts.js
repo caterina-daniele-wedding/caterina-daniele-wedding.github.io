@@ -177,14 +177,40 @@ $(document).ready(function () {
     $('#btn-confirm').click(function () {
         $('#people-amount').toggleClass('toggle-map-content');
         $('#people-form').toggleClass('toggle-map-content');
-        console.log($('#n-participants').val());
         var n_participants = $('#n-participants').val();
 		var tag_to_append = $('<div class="row"><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-user"></i><input name="name'+(1)+'" class=""placeholder="Full name '+(1)+'"required></div></div><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-spoon"></i><input type="text" name="dietary_restrictions'+(1)+'" class=""placeholder="Dietary restrictions"required></div></div></div><div class="row"><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-shield"></i><input type="text" name="sword_tournament'+(1)+'" class=""placeholder="Enter sword tournament? (y/n)"required></div></div><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-music"></i><input type="text" name="song'+(1)+'" class="" placeholder="Song for karaoke"></div></div></div>');
 		for(t=0; t<n_participants; t++){
 			$("#multiple-participants").append(tag_to_append);
-            console.log(t);
             tag_to_append = $('<div class="row" style="margin-top:40px"><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-user"></i><input name="name'+(t+2)+'" class=""placeholder="Full name '+(t+2)+'"required></div></div><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-spoon"></i><input type="text" name="dietary_restrictions'+(t+2)+'" class=""placeholder="Dietary restrictions"required></div></div></div><div class="row"><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-shield"></i><input type="text" name="sword_tournament'+(t+2)+'" class=""placeholder="Enter sword tournament? (y/n)"required></div></div><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-music"></i><input type="text" name="song'+(t+2)+'" class="" placeholder="Song for karaoke"></div></div></div>');
 		}
+    });
+
+    $('#btn-confirm-ita').click(function () {
+        $('#people-amount-ita').toggleClass('toggle-map-content');
+        $('#people-form-ita').toggleClass('toggle-map-content');
+        var n_participants = $('#n-participants-ita').val();
+		var tag_to_append = $('<div class="row"><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-user"></i><input name="name'+(1)+'" class=""placeholder="Nome completo '+(1)+'"required></div></div><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-spoon"></i><input type="text" name="dietary_restrictions'+(1)+'" class=""placeholder="Esigenze alimentari"required></div></div></div><div class="row"><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-shield"></i><input type="text" name="sword_tournament'+(1)+'" class=""placeholder="Partecipi al torneo di spada?"required></div></div><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-music"></i><input type="text" name="song'+(1)+'" class="" placeholder="Canzone per karaoke"></div></div></div>');
+		for(t=0; t<n_participants; t++){
+			$("#multiple-participants-ita").append(tag_to_append);
+            tag_to_append = $('<div class="row" style="margin-top:40px"><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-user"></i><input name="name'+(t+2)+'" class=""placeholder="Nome completo '+(t+2)+'"required></div></div><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-spoon"></i><input type="text" name="dietary_restrictions'+(t+2)+'" class=""placeholder="Esigenze alimentari"required></div></div></div><div class="row"><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-shield"></i><input type="text" name="sword_tournament'+(t+2)+'" class=""placeholder="Partecipi al torneo di spada?"required></div></div><div class="col-md-6 col-sm-6"><div class="form-input-group"><i class="fa fa-music"></i><input type="text" name="song'+(t+2)+'" class="" placeholder="Canzone per karaoke"></div></div></div>');
+		}
+    });
+
+    /********************** Flags Buttons **********************/
+    $('#ita-flag').click(function () {
+        $('.eng-text').toggleClass('language-hidden');
+        $('.ita-text').toggleClass('language-hidden');
+        $('#ita-flag').toggleClass('language-hidden');
+        $('#eng-flag').toggleClass('language-hidden');
+        $('#add-to-cal-ita label').text("Aggiungi al tuo calendario");
+    });
+
+    $('#eng-flag').click(function () {
+        $('.ita-text').toggleClass('language-hidden');
+        $('.eng-text').toggleClass('language-hidden');
+        $('#ita-flag').toggleClass('language-hidden');
+        $('#eng-flag').toggleClass('language-hidden');
+
     });
 
     /********************** Toggle Programme Sections **********************/
@@ -267,6 +293,85 @@ $(document).ready(function () {
         }
     });
 
+    $('#ceremony-ita').click(function(){
+        if( $("#txt-ceremony-ita").css('display') == 'none') {
+            $('#txt-ceremony-ita').css({"visibility":"visible",
+                                    "display":"inline-block"});
+            $('#arrow-ceremony-ita').attr('class', 'fa fa-angle-up');
+        }
+        else{
+            $('#txt-ceremony-ita').css({"visibility":"hidden",
+                                    "display":"none"});
+            $('#arrow-ceremony-ita').attr('class', 'fa fa-angle-down');
+        }
+    });
+
+    $('#aperitif-ita').click(function(){
+        if( $("#txt-aperitif-ita").css('display') == 'none') {
+            $('#txt-aperitif-ita').css({"visibility":"visible",
+                                    "display":"inline-block"});
+            $('#arrow-aperitif-ita').attr('class', 'fa fa-angle-up');
+            
+        }
+        else{
+            $('#txt-aperitif-ita').css({"visibility":"hidden",
+                                    "display":"none"});
+            $('#arrow-aperitif-ita').attr('class', 'fa fa-angle-down');
+        }
+    });
+
+    $('#lunch-ita').click(function(){
+        if( $("#txt-lunch-ita").css('display') == 'none') {
+            $('#txt-lunch-ita').css({"visibility":"visible",
+                                    "display":"inline-block"});
+            $('#arrow-lunch-ita').attr('class', 'fa fa-angle-up');
+        }
+        else{
+            $('#txt-lunch-ita').css({"visibility":"hidden",
+                                    "display":"none"});
+            $('#arrow-lunch-ita').attr('class', 'fa fa-angle-down');
+        }
+    });
+
+    $('#medieval-ita').click(function(){
+        if( $("#txt-medieval-ita").css('display') == 'none') {
+            $('#txt-medieval-ita').css({"visibility":"visible",
+                                    "display":"inline-block"});
+            $('#arrow-medieval-ita').attr('class', 'fa fa-angle-up');
+        }
+        else{
+            $('#txt-medieval-ita').css({"visibility":"hidden",
+                                    "display":"none"});
+            $('#arrow-medieval-ita').attr('class', 'fa fa-angle-down');
+        }
+    });
+
+    $('#dinner-ita').click(function(){
+        if( $("#txt-dinner-ita").css('display') == 'none') {
+            $('#txt-dinner-ita').css({"visibility":"visible",
+                                    "display":"inline-block"});
+            $('#arrow-dinner-ita').attr('class', 'fa fa-angle-up');
+        }
+        else{
+            $('#txt-dinner-ita').css({"visibility":"hidden",
+                                    "display":"none"});
+            $('#arrow-dinner-ita').attr('class', 'fa fa-angle-down');
+        }
+    });
+
+    $('#dj-ita').click(function(){
+        if( $("#txt-dj-ita").css('display') == 'none') {
+            $('#txt-dj-ita').css({"visibility":"visible",
+                                    "display":"inline-block"});
+            $('#arrow-dj-ita').attr('class', 'fa fa-angle-up');
+        }
+        else{
+            $('#txt-dj-ita').css({"visibility":"hidden",
+                                    "display":"none"});
+            $('#arrow-dj-ita').attr('class', 'fa fa-angle-down');
+        }
+    });
+
     /********************** Add to Calendar **********************/
     var myCalendar = createCalendar({
         options: {
@@ -296,7 +401,36 @@ $(document).ready(function () {
         }
     });
 
+    var myCalendarIta = createCalendar({
+        options: {
+            class: '',
+            // You can pass an ID. If you don't, one will be generated for you
+            id: ''
+        },
+        data: {
+            // Event title
+            title: "Matrimonio di Caterina and Daniele",
+
+            // Event start date
+            start: new Date('Jun 8, 2024 10:30'),
+
+            // Event duration (IN MINUTES)
+            // duration: 120,
+
+            // You can also choose to set an end time
+            // If an end time is set, this will take precedence over duration
+            end: new Date('Jun 9, 2024 01:00'),
+
+            // Event Address
+            address: 'Via Gagliardi 1, Mestre (Ve)',
+
+            // Event Description
+            description: "Ti aspettiamo!"
+        }
+    });
+
     $('#add-to-cal').html(myCalendar);
+    $('#add-to-cal-ita').html(myCalendarIta);
 
 
     /********************** RSVP **********************/
@@ -322,6 +456,32 @@ $(document).ready(function () {
                 .fail(function (data) {
                     console.log(data);
                     $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                });
+        }
+    });
+
+    $('#rsvp-form-ita').on('submit', function (e) {
+        e.preventDefault();
+        var data = $(this).serialize();
+
+        $('#alert-wrapper-ita').html(alert_markup('info', '<strong>Solo un secondo!</strong> Stiamo salvando le tue informazioni.'));
+
+        if (MD5($('#invite_code-ita').val()) !== 'bb0efea553d080b06053dc948148a8fe') {
+            $('#alert-wrapper-ita').html(alert_markup('danger', '<strong>Scusa!</strong> Il tuo codice invito non è corretto.'));
+        } else {
+            $.post('https://script.google.com/macros/s/AKfycbxhKClIcfNLlhJF2wymeJc4Gh4CygOoD4bx88w59ALeLXoUXNfY7hR1UKwOCkJ7fWLD/exec', data)
+                .done(function (data) {
+                    console.log(data);
+                    if (data.result === "error") {
+                        $('#alert-wrapper-ita').html(alert_markup('danger', data.message));
+                    } else {
+                        $('#alert-wrapper-ita').html('');
+                        $('#rsvp-modal-ita').modal('show');
+                    }
+                })
+                .fail(function (data) {
+                    console.log(data);
+                    $('#alert-wrapper-ita').html(alert_markup('danger', '<strong>Ci scusiamo!</strong> Ci sono problemi con il server. '));
                 });
         }
     });
