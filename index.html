@@ -20,7 +20,7 @@
     <!--<meta property="og:image" content="https://github.com/caterina-daniele-wedding/caterina-daniele-wedding.github.io/blob/master/img/catodano.jpg">-->
     <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <!--<link rel="icon" type="image/png" sizes="32x32" href="favicon-256x256.png">-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_fedi.png">
     <!--<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">-->
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
@@ -67,28 +67,55 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 <section class="hero">
-    <section class="navigation">
+    <section class="navigation eng-text">
         <header>
             <div class="header-content">
-                <div class="logo"><a href="#"><i class="fa fa-home fa-2x"></i></a></div>
+                <div class="logo"><a href="#"><img src="img/fedi_home.png" alt="Logo"></a></div>
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
                             <!--<li><a href="#intro">How we met</a></li>-->
-                            <li><a href="#events">Event Schedule</a></li>
-                            <li><a href="#dress-code">Dress Code</a></li>
+                            <li class="eng-text"><a href="#events">Event Schedule</a></li>
+                            <li class="eng-text"><a href="#dress-code">Dress Code</a></li>
                             <!--<li><a href="#instagram">Instagram</a></li>
                             <li><a href="#eng-pics">Engagement</a></li>-->
                             <!--<li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the Venue</a></li>-->
-                            <li class="hidden-sm hidden-xs hidden-md"><a href="#video-bg">Venue</a></li>
-                            <li class="hidden-lg"><a href="#img-bg">Venue</a></li>
-                            <li><a href="#accommodation">Accommodation</a></li>
+                            <li class="hidden-sm hidden-xs hidden-md eng-text"><a href="#video-bg">Venue</a></li>
+                            <li class="hidden-lg eng-text"><a href="#img-bg">Venue</a></li>
+                            <li class="eng-text"><a href="#accommodation">Accommodation</a></li>
                             <!--<li><a href="#rsvp-date">Register</a></li>-->
-                            <li><a href="#gift">Gift</a></li>
+                            <li class="eng-text"><a href="#gift">Gift</a></li>
                         </ul>
                         <ul class="member-actions">
                             <!--<li><a href="#map" class="login">Venue address</a></li>-->
-                            <li><a href="#rsvp-date" class="btn-white btn-small">Register</a></li>
+                            <li><a href="#rsvp-date" class="btn-white btn-small" style="margin-right: 20px; margin-left: 20px;">Register</a></li>
+                            <li><img id="ita-flag" src="img/ita_flag.png" alt="Logo" style="height: 15px;"></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section class="navigation ita-text language-hidden">
+        <header>
+            <div class="header-content">
+                <div class="logo"><a href="#"><img src="img/fedi_home.png" alt="Logo"></a></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li class="ita-text language-hidden"><a href="#events-ita">Programma Matrimonio</a></li>
+                            <li class="ita-text language-hidden"><a href="#dress-code-ita">Dress Code</a></li>
+                            <li class="hidden-sm hidden-xs hidden-md ita-text language-hidden"><a href="#video-bg">Ricevimento</a></li>
+                            <li class="hidden-lg ita-text language-hidden"><a href="#img-bg">Ricevimento</a></li>
+                            <li class="ita-text language-hidden"><a href="#accommodation-ita">Dove alloggiare</a></li>
+                            <li class="ita-text language-hidden"><a href="#gift-ita">Regalo</a></li>
+                        </ul>
+                        <ul class="member-actions">
+                            <li><a href="#rsvp-date" class="btn-white btn-small" style="margin-right: 20px; margin-left: 20px;">Conferma Presenza</a></li>
+                            <li><img id="eng-flag" class="language-hidden" src="img/uk_flag.png" alt="Logo" style="height: 15px;"></li>
                         </ul>
                     </nav>
                 </div>
@@ -116,13 +143,25 @@
     <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
 </section>
 
-<section id="invitation" class="section-padding">
+<section id="invitation" class="section-padding eng-text">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>We are getting married!</h3>
                 <p>We would like you to be a part of this special day on the</p> 
                 <p><strong>8<sup>th</sup> of June 2024</strong></p>
+                <!--<div class="share-bar"></div>-->
+            </div>
+        </div>
+    </div>
+</section>
+<section id="invitation" class="section-padding ita-text language-hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Ci sposiamo!</h3>
+                <p>Vorremmo che tu facessi parte di questa giornata speciale l'</p> 
+                <p><strong>8 Giugno 2024</strong></p>
                 <!--<div class="share-bar"></div>-->
             </div>
         </div>
@@ -152,7 +191,7 @@
     </div>
 </section>-->
 
-<section class="events section-padding" id="events">
+<section class="events section-padding eng-text" id="events">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -213,30 +252,6 @@
                     <hr>
                 </div>
             </div>
-            <!--<div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <div class="wp4">
-                    <p><strong>Italian</strong></p>
-
-                    <h5>Cerimonia <span class="time">10.30AM-11.30AM</span></h5>
-                    <p>Descrizione cerimonia</p>
-                </div>
-                <div class="wp6">
-                    <h5>Ricevimento - Pranzo <span class="time">Ora inizio - Ora fine</span></h5>
-                    <p> Descrizione Ricevimento/Pranzo</p>
-                </div>
-                <div class="wp5">
-                    <h5>Intrattenimento Bimbi <span class="time">Ora inizio - Ora fine</span></h5>
-                    <p>Descrizione intrattenimento bimbi</p>
-                </div>
-                <div class="wp5">
-                    <h5>Festeggiamenti post-pranzo <span class="time">Ora inizio - Ora fine</span></h5>
-                    <p>Descrizione festeggiamenti post pranzo</p>
-                </div>
-                <div class="wp5">
-                    <h5>Cena <span class="time">Ora inizio - Ora fine</span></h5>
-                    <p>Descrizione cena</p>
-                </div>
-            </div>-->
         </div>
         <div class="row section-padding" id="dress-code">
             <div class="col-md-4 col-md-offset-4 text-center">
@@ -245,10 +260,6 @@
                 </a>
             </div>
         </div>
-        <!--<div class="row">
-            <div class="col-xs-12 section-border section-padding">
-            </div>
-        </div>-->
     </div>
 
     <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
@@ -257,18 +268,121 @@
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                     </button>
-                    <h3 class="text-center section-padding">Ugh... dress codes?</h3>
-                    <h5>English</h5>
-                    <p>
-                        <strong>No strict requirements</strong>
-                        <br>
-                        If you are taking part in the sword tournament, you might want to bring some spare comfortable clothes. Or you can fight in your suit/dress like a true gentleperson!
+                    <h3 class="text-center section-padding">Dresscode</h3>
+                    <p class="text-center">
+                        For the celebration and the party,<br>the intended atmosphere is "British garden party",<br>so old fashioned and formal but relaxed and cheerful. <br>
+                        We suggest a natural and earthy colour palette:<br> browns, greens, light yellows and pink and dark red. <br>
+                        As we said, these are our suggestions,<br>but we do not want you to buy an entire new outfit just for this occasion. <br>
+                        So, if you have nothing following these guidelines,<br>feel free to wear what you already have!
                     </p>
-                    <h5>Italian</h5>
-                    <p>
-                        <strong>Nessun requisito specifico</strong>
-                        <br>
-                        Se prendi parte al torneo di spada, puoi portare un cambio più comodo da utilizzare. Oppure puoi combattere con il tuo abito/vestito come una vera "gentilpersona"!
+                    <h5 class="text-center">Attention</h5>
+                    <p class="text-center">
+                        The party will take place in a garden,<br>so wear sensible shoes and long dresses. <br>
+                        We will be protected by the trees' shadows<br>but you can also bring a fancy hat for extra protection, if you want.
+                    </p>
+                    <h5 class="text-center">Tournament gear</h5>
+                    <p class="text-center">
+                        If you will take part in the sword tournament,<br>bring a change of clothes or accept the fate of your seams.
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+</section>
+
+<section class="events section-padding ita-text language-hidden" id="events-ita">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header" style="padding-bottom: 0px; margin-bottom: 0px;">Programma matrimonio</h3>
+                <!--<p><strong>Click the sections to expand or collapse</strong></p>-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="wp3">
+                    <h5 id="ceremony-ita">Cerimonia <br><span class="time">10:30 - 11:30</span><br><i id="arrow-ceremony-ita" class="fa fa-angle-down"></i></h5>
+                    <div id="txt-ceremony-ita" style="visibility: hidden; display:none">
+                        <p>Don Sandro Manfrè e Don Gilberto Sabbadin <br> celebreranno la <strong>Santa Messa</strong> Cattolica <br> nella chiesa Corpus Domini a Mestre, Venezia</p>
+                        
+                    </div>
+                    <hr>
+                </div>
+                <div class="wp5">
+                    <h5 id="aperitif-ita">Aperitivo in villa <br><span class="time">12:30 - 14:00</span><br><i id="arrow-aperitif-ita" class="fa fa-angle-down"></i></h5>
+                    <div id="txt-aperitif-ita" style="visibility: hidden; display:none">
+                        <p>Verranno serviti <strong>finger food e bevande</strong> <br> nel giardino di una Villa Veneta Neoclassica. <br> <strong>Inoltre, la villa potrà essere visitata.</strong></p>
+                        
+                    </div>
+                    <hr>
+                </div>
+                <div class="wp5">
+                    <h5 id="lunch-ita">Pranzo - banchetto sotto agli alberi <br><span class="time">14:00 - 16:30</span><br><i id="arrow-lunch-ita" class="fa fa-angle-down"></i></h5>
+                    <div id="txt-lunch-ita" style="visibility: hidden; display:none">
+                        <p>Prenderemo parte ad un gioioso pranzo <br> rinfrescati dall'ombra di alberi centenari e dai suoni della natura.</p>
+                        <p>Gli ospiti che vogliono <strong>suggerire un gioco</strong> <br> o <strong>condividere un aneddoto</strong> con noi <br> possono già contattare i nostri testimoni (link).</p>
+                        <p>Durante il pranzo i genitori avranno la possibilità di <br> lasciar giocare i bambini nell' <strong>Area Giochi</strong>, <br> sotto la supervisioni di due ragazzi scout.</p>
+                        
+                    </div>
+                    <hr>
+                </div>
+                <div class="wp5">
+                    <h5 id="medieval-ita">Intrattenimento medievale<br><span class="time">17:00 - 19:00</span><br><i id="arrow-medieval-ita" class="fa fa-angle-down"></i></h5>
+                    <div id="txt-medieval-ita" style="visibility: hidden; display:none">
+                        <p>Dimostra di che pasta sei fatto <br> combattendo in un <strong>torneo di spada cortese</strong>, <br> organizzato da alcuni membri dell'Associazione Cavalcalupi.</p>
+                        <p>Su partecipazione volontaria <br> faremo qualche giro di facili e classiche <strong>danze popolari</strong>.</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="wp5">
+                    <h5 id="dinner-ita">Open Bar, Cena e Karaoke <br><span class="time">19:00 - 21:00</span><br><i id="arrow-dinner-ita" class="fa fa-angle-down"></i></h5>
+                    <div id="txt-dinner-ita" style="visibility: hidden; display:none">
+                        <p><strong>Offriamo noi, festeggiamo!</strong> <br> Verrà servita anche una cena semplice, <br> per dare energie per il resto della serata.</p>
+                        <p>Il sole scende <br> ma la festa è appena iniziata! <br> Se vuoi mostrare a tutti le tue abilità canore <br> o vuoi semplicemente festeggiare<br> preparati per il tuo momento sotto i riflettori.</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="wp5">
+                    <h5 id="dj-ita">DJ set <br><span class="time">21:00 - 24:00</span><br><i id="arrow-dj-ita" class="fa fa-angle-down"></i></h5>
+                    <div id="txt-dj-ita" style="visibility: hidden; display:none">
+                        <p><strong>Balla e chiacchiera</strong>, <br> siamo tutti qui per celebrare la nostra vita insieme.</p>
+                        <p>Ricordati di <strong>essere sobrio</strong> prima di rimetterti alla guida, <br> oppure trova un <strong>guidatore designato</strong>! <br> Buonanotte!</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="row section-padding" id="dress-code-ita">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal-ita">
+                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="dc-modal-ita" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <h3 class="text-center section-padding">Suggerimenti per come vestirsi</h3>
+                    <p class="text-center">
+                        Per la celebrazione e il ricevimento, <br> vorremmo dare una atmosfera simile ad una "festa in un giardino Inglese": <br> quindi un po' antiquata e formale ma rilassata e divertente. <br>
+                        Suggeriamo quindi di vestirsi con una palette di colori naturali:<br> marroni, verdi o gialli/rosa/rossi chiari. <br>
+                        Come detto, questi sono solo dei suggerimenti. <br>Non vogliamo che tu debba acquistare degli abiti nuovi <br> solo per questa occasione. <br>
+                        In caso tu non abbia nulla che si attenga ai nostri consigli,<br> mettiti pure ciò che hai già.
+                    </p>
+                    <h5 class="text-center">Attenzione</h5>
+                    <p class="text-center">
+                        La festa si terrà in un giardino,<br>quindi scegli scarpe e vestiti lunghi di conseguenza. <br>
+                        Le ombre degli alberi ci proteggeranno dal sole,<br> ma puoi anche portare un cappello elegante per una protezione extra, se vuoi.
+                    </p>
+                    <h5 class="text-center">Attrezzati per il torneo</h5>
+                    <p class="text-center">
+                        Se vuoi partecipare al torneo di spada cortese,<br> porta unn cambio o accetta il destino dei tuoi abiti.
                     </p>
                 </div>
             </div><!-- /.modal-content -->
@@ -389,7 +503,7 @@
     <!--<h5 id="text-img-villa">Villa Widmann</h5>-->
 </section>
 
-<section id="map" class="section-padding" style="background-color:#f8f9fd">
+<section id="map" class="section-padding eng-text" style="background-color:#f8f9fd">
     <div class="text-center">
         <h3>How do I get there?</h3>
         <p>It's way easier than you think!</p>
@@ -525,7 +639,143 @@
     </div><!-- /.modal -->
 </section>
 
-<section class="section-padding" id="rsvp-date" style="background: rgb(101,124,124);">
+<section id="map-ita" class="section-padding ita-text language-hidden" style="background-color:#f8f9fd">
+    <div class="text-center">
+        <h3>Come ci arrivo?</h3>
+        <p>È più semplice di quanto pensi!</p>
+    </div>
+    <!--<div id="map-canvas" style="background-color:#f8f9fd"></div>-->
+    <!--<div class="row" style="background-color:#f8f9fd">-->
+        <!--<div id="map-content-wrapper" class="container pointer-events-none">-->
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-1">
+                        <div class="text-center">
+                            <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                                <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Mostra informazioni
+                            </div>
+                        </div>
+                        <div id="map-content" class="pointer-events-auto">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3" style="text-align:center">
+                                    <h5>Chiesa Corpus Domini</h5>
+                                    <p>Via Gagliardi, 1, 30173 Venice, Italy</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3" style="text-align:center">
+                                    <h5>Per informazioni</h5>
+                                    <p><i class="fa fa-mobile"></i> <a style="color:rgb(101,124,124);" href="tel://+390415322014">+39 0415322014</a><be>
+                                        <!--<i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a>-->
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <!--<div class="col-md-6" style="padding: 5px;">
+                                    <a class="btn btn-fill btn-small"
+                                    href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
+                                            class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+                                </div>-->
+                                <div class="col-md-6 col-md-offset-3" style="padding: 5px;">
+                                    <a class="btn btn-fill btn-small" style="background-color:rgb(101,124,124); border:rgb(101,124,124)"
+                                    href="https://maps.app.goo.gl/WQdHFYcnd2nahC9r9" target="_blank"><i class="fa fa-map-marker"></i>&nbsp;&nbsp; Google Maps
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-1">
+                        <div class="text-center">
+                            <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                                <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Mostra informazioni
+                            </div>
+                        </div>
+                        <div id="map-content" class="pointer-events-auto">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3" style="text-align:center">
+                                    <h5>Villa Widmann</h5>
+                                    <p>Via Nazionale, 420, 30034 Mira VE, Italy</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3" style="text-align:center">
+                                    <h5>Per informazioni</h5>
+                                    <p><i class="fa fa-mobile"></i> <a style="color: rgb(101,124,124)" href="tel://+39041424973">+39 041424973</a><be>
+                                        <!--<i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a>-->
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <!--<div class="col-md-6" style="padding: 5px;">
+                                    <a class="btn btn-fill btn-small"
+                                    href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
+                                            class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+                                </div>-->
+                                <div class="col-md-6 col-md-offset-3" style="padding: 5px;">
+                                    <a class="btn btn-fill btn-small" style="background-color:rgb(101,124,124); border:rgb(101,124,124)"
+                                    href="https://maps.app.goo.gl/2b2jnwmtQwKpwEnB7" target="_blank"><i class="fa fa-map-marker"></i>&nbsp;&nbsp; Google Maps
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="accommodation-ita">
+                <div class="col-md-12 text-center" style="margin-top:20px">
+                    <hr>
+                    <h3 style="margin-top:40px">Dove alloggiare?</h3>
+                </div>
+                <div class="col-md-4 col-md-offset-4 text-center" style="padding-top:30px">
+                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal-accommodation-ita">
+                        <i class="fa fa-hotel"></i>&nbsp;&nbsp;Possibili alloggi
+                    </a>
+                </div>
+            </div>
+        <!--</div>-->
+    <!--</div>-->
+    <div id="dc-modal-accommodation-ita" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <h3 class="text-center section-padding">Un paio di scelte per te</h3>
+                    <p>
+                        <strong>Hotel Garibaldi - Viale Garibaldi 24, 30173 Mestre, Italy </strong>
+                        <br>
+                        <p>L'hotel Garibaldi è un piccolo hotel 3 stelle vicino al centro di Mestre.</p>
+                        <p>È vicino alla chiesa dove si terrà la cerimonia ed ha un parcheggio privato, nel caso tu abbia una macchina per poi raggiungere Villa Widmann.</p>
+                        <p>Il prezzo per una stanza è contenuto, e potrebbe essere ideale se volessi spendere solo una o due notti senza visitare Venezia.</p>
+                        <hr>
+                    </p>
+
+                    <p>
+                        <strong>Hotel Papadopoli - S. Croce 245, 30135 Venice, Italy</strong>
+                        <br>
+                        <p>L'Hotel Papadopoli è un bel hotel 4 stelle a Venezia.</p>
+                        <p>È molto vicino alla stazione dei treni e autobus di Venezia, ed anche alla chiesa dove si terrà la cerimonia. </p>
+                        <p>Essendo a Venezia, l'hotel non ha un parcheggio MA ci sono dei parcheggi gratuiti vicino alla chiesa del matrimonio dove poter lasciare la macchina. Potrai poi raggiungere questi parcheggi tramite bus o tram da Venezia.</p>
+                        <p>Sebbene il prezzo sia un po' più alto, se tu dovessi prenotare per diverse persone potremmo riuscire a procurarti uno "sconto comitiva": nel caso, facci sapere in anticipo le date e per quante persone vorresti prenotare!</p>
+                        <p>Questo hotel è un'ottima opzione per le persone che vorranno visitare Venezia prima o dopo il matrimonio.</p>
+                        <hr>
+                    </p>
+
+                    <p>
+                        <strong>Airbnb</strong>
+                        <br>
+                        <p>Infine, Airbnb è sempre un ottimo alleato. Dovresti riuscire a trovare alloggi sia a Venezia che a Mestre.</p>
+                        <p>Sebbene non possiamo garantire per la qualità della sistemazione che troverai, puoi sempre inviarci l'indirizzo prima di prenotare: faremo il possibile per farti sapere se la posizione sia buona ed abbia senso alloggiare da quelle parti.</p>
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</section>
+
+<section class="section-padding eng-text" id="rsvp-date" style="background: rgb(101,124,124);">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -536,7 +786,18 @@
     </div>
 </section>
 
-<section class="rsvp text-center events" id="rsvp">
+<section class="section-padding ita-text language-hidden" id="rsvp-date" style="background: rgb(101,124,124);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 style="color:white;">Ci sarai?</h3>
+                <p style="color:white;">Ti chiediamo cortesemente di farci sapere entro il <br> <strong>15 Maggio 2024</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="rsvp text-center events eng-text" id="rsvp">
 
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -616,13 +877,105 @@
     </div>
 </section>
 
-<section class="section-padding" id="gift">
+<section class="rsvp text-center events ita-text language-hidden" id="rsvp-ita">
+
+    <div id="rsvp-modal-ita" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3>Grazie!</h3>
+                        <p>Siamo molto felici di sapere che ci sarai in questo giorno importante!</p>
+                        <div id="add-to-cal-ita"></div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="people-amount-ita" class="container class-people-amount section-padding">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h3>In quanti sarete?</h3>
+                <select id="n-participants-ita" style="width:100px">
+                    <option style="text-align: center;" value="1">1</option>
+                    <option style="text-align: center;" value="2">2</option>
+                    <option style="text-align: center;" value="3">3</option>
+                    <option style="text-align: center;" value="4">4</option>
+                    <option style="text-align: center;" value="5">5</option>
+                    <option style="text-align: center;" value="6">6</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-md-offset-3" style="margin-top: 7px">
+                <button id="btn-confirm-ita" class="btn-fill confirm-btn" style="border: solid 1px rgb(101,124,124); background-color:rgb(101,124,124);">
+                    Conferma
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="people-form-ita" class="container toggle-map-content class-people-form section-padding">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form id="rsvp-form-ita" class="rsvp-form"
+                      action=""
+                      method="POST">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-md-offset-3">
+                            <div class="form-input-group">
+                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                                                     placeholder="La tua email"
+                                                                     required>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="multiple-participants-ita">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-md-offset-3"> 
+                            <!--col-md-offset-3">-->
+                            <div class="form-input-group">
+                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code-ita"
+                                                                class="" min="0"
+                                                                placeholder="Codice invito"
+                                                                required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper-ita"></div>
+                    </div>
+                    <button class="btn-fill rsvp-btn">
+                        Finito!
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding eng-text" id="gift">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>Do you want to make us a gift?</h3>
                 <p>First of all, the most important gift is of course your presence on this day.</p>
                 <p>IF you want to make us an additional present, to help us realize small and big dreams, you can donate any amount to</p>
+                <p class="text-center">SE27 3000 0000 0439 5030 4734</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding ita-text language-hidden" id="gift-ita">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Vuoi farci un regalo?</h3>
+                <p>Innanzitutto, il regalo più importante per noi è che tu sia presente in questo giorno.</p>
+                <p>SE vuoi farci un altro regalo, per aiutarci a realizzare sogni grandi e piccoli, puoi fare un bonifico su questo conto</p>
                 <p class="text-center">SE27 3000 0000 0439 5030 4734</p>
             </div>
         </div>
