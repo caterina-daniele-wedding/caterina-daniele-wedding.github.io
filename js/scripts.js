@@ -231,6 +231,19 @@ $(document).ready(function () {
             $('#arrow-ceremony').attr('class', 'fa fa-angle-down');
         }
     });
+    $('#buffet').click(function(){
+        if( $("#txt-buffet").css('display') == 'none') {
+            $('#txt-buffet').css({"visibility":"visible",
+                                    "display":"inline-block"});
+            $('#arrow-buffet').attr('class', 'fa fa-angle-up');
+            
+        }
+        else{
+            $('#txt-buffet').css({"visibility":"hidden",
+                                    "display":"none"});
+            $('#arrow-buffet').attr('class', 'fa fa-angle-down');
+        }
+    });
 
     $('#aperitif').click(function(){
         if( $("#txt-aperitif").css('display') == 'none') {
@@ -311,6 +324,20 @@ $(document).ready(function () {
         }
     });
 
+    $('#buffet-ita').click(function(){
+        if( $("#txt-buffet-ita").css('display') == 'none') {
+            $('#txt-buffet-ita').css({"visibility":"visible",
+                                    "display":"inline-block"});
+            $('#arrow-buffet-ita').attr('class', 'fa fa-angle-up');
+            
+        }
+        else{
+            $('#txt-buffet-ita').css({"visibility":"hidden",
+                                    "display":"none"});
+            $('#arrow-buffet-ita').attr('class', 'fa fa-angle-down');
+        }
+    });
+
     $('#aperitif-ita').click(function(){
         if( $("#txt-aperitif-ita").css('display') == 'none') {
             $('#txt-aperitif-ita').css({"visibility":"visible",
@@ -374,6 +401,55 @@ $(document).ready(function () {
             $('#txt-dj-ita').css({"visibility":"hidden",
                                     "display":"none"});
             $('#arrow-dj-ita').attr('class', 'fa fa-angle-down');
+        }
+    });
+
+    $('#animals-section').click(function(){
+        if( $("#animals-text").css('display') == 'none') {
+            $('#animals-text').css({"visibility":"visible",
+                                    "display":"inline-block"});
+            $('#arrow-animals-section').attr('class', 'fa fa-angle-up');
+        }
+        else{
+            $('#animals-text').css({"visibility":"hidden",
+                                    "display":"none"});
+            $('#arrow-animals-section').attr('class', 'fa fa-angle-down');
+        }
+    });
+    $('#animals-section-mobile').click(function(){
+        if( $("#animals-text-mobile").css('display') == 'none') {
+            $('#animals-text-mobile').css({"visibility":"visible",
+                                    "display":"inline-block"});
+            $('#arrow-animals-section-mobile').attr('class', 'fa fa-angle-up');
+        }
+        else{
+            $('#animals-text-mobile').css({"visibility":"hidden",
+                                    "display":"none"});
+            $('#arrow-animals-section-mobile').attr('class', 'fa fa-angle-down');
+        }
+    });
+    $('#animals-section-ita').click(function(){
+        if( $("#animals-text-ita").css('display') == 'none') {
+            $('#animals-text-ita').css({"visibility":"visible",
+                                    "display":"inline-block"});
+            $('#arrow-animals-section-ita').attr('class', 'fa fa-angle-up');
+        }
+        else{
+            $('#animals-text-ita').css({"visibility":"hidden",
+                                    "display":"none"});
+            $('#arrow-animals-section-ita').attr('class', 'fa fa-angle-down');
+        }
+    });
+    $('#animals-section-mobile-ita').click(function(){
+        if( $("#animals-text-mobile-ita").css('display') == 'none') {
+            $('#animals-text-mobile-ita').css({"visibility":"visible",
+                                    "display":"inline-block"});
+            $('#arrow-animals-section-mobile-ita').attr('class', 'fa fa-angle-up');
+        }
+        else{
+            $('#animals-text-mobile-ita').css({"visibility":"hidden",
+                                    "display":"none"});
+            $('#arrow-animals-section-mobile-ita').attr('class', 'fa fa-angle-down');
         }
     });
 
