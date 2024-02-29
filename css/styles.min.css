@@ -860,16 +860,20 @@ header .member-actions{
     border:none
 }
 .rsvp .rsvp-form .form-input-group input::-webkit-input-placeholder{
-    color:#bcc1c3
+    /*color:#bcc1c3*/
+    color:#000000
 }
 .rsvp .rsvp-form .form-input-group input:-moz-placeholder{
-    color:#bcc1c3
+    /*color:#bcc1c3*/
+    color:#000000
 }
 .rsvp .rsvp-form .form-input-group input::-moz-placeholder{
-    color:#bcc1c3
+    /*color:#bcc1c3*/
+    color:#000000
 }
 .rsvp .rsvp-form .form-input-group input:-ms-input-placeholder{
-    color:#bcc1c3
+    /*color:#bcc1c3*/
+    color:#000000
 }
 footer .content{
     border-top:1px solid #e6e9ea;
