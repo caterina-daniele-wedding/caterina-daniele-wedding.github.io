@@ -861,19 +861,19 @@ header .member-actions{
 }
 .rsvp .rsvp-form .form-input-group input::-webkit-input-placeholder{
     /*color:#bcc1c3*/
-    color:#000000
-}
-.rsvp .rsvp-form .form-input-group input:-moz-placeholder{
-    /*color:#bcc1c3*/
-    color:#000000
+    color:#697C7C
 }
 .rsvp .rsvp-form .form-input-group input::-moz-placeholder{
     /*color:#bcc1c3*/
-    color:#000000
+    color:#697C7C
 }
-.rsvp .rsvp-form .form-input-group input:-ms-input-placeholder{
+.rsvp .rsvp-form .form-input-group input::-moz-placeholder{
     /*color:#bcc1c3*/
-    color:#000000
+    color:#697C7C
+}
+.rsvp .rsvp-form .form-input-group input::-ms-input-placeholder{
+    /*color:#bcc1c3*/
+    color:#697C7C
 }
 footer .content{
     border-top:1px solid #e6e9ea;
